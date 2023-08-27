@@ -71,7 +71,6 @@ namespace FileCreateWorkerService
             var wb = new XLWorkbook();
             var ds = new DataSet();
             ds.Tables.Add(GetTable("products"));
-            ;
 
             wb.Worksheets.Add(ds);
             wb.SaveAs(ms);
